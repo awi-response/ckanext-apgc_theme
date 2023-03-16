@@ -1,0 +1,30 @@
+{% ckan_extends %}
+
+      {% block header_site_navigation %}
+        <nav class="section navigation">
+          <ul class="nav nav-pills">
+            {% block header_site_navigation_tabs %}
+              {{ h.build_nav_main(
+                ('dataset.search', _('Datasets')),
+                ('category.index', _('Categories')),
+                ('group.index', _('Projects')),
+               ('collection.index', _('Collections')),
+                ('home.about', _('About'))
+              ) }}
+            {% endblock %}
+            <li class="menu-map"><a target="_blank" href="https://apgc-map.awi.de">{% trans %}Map{% endtrans %}</a></li>
+            <li class="menu-help"><a target="_blank" href="https://apgc.awi.de/uploads/images/APGC_Help_Documentation_v1_1.pdf"><i class="fa fa-question-circle" title="{% trans %}Help Guide{% endtrans %}"></i></a></li>
+          </ul>
+        </nav>
+      {% endblock %}
+      {% block header_site_search %}
+        <form class="section site-search simple-input" action="{% url_for 'dataset.search' %}" method="get">
+          <div class="field">
+            <label for="field-sitewide-search">{% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>
+            <input id="field-sitewide-search" type="text" name="q" placeholder="{{ _('Search') }}" />
+            <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+            
+          </div>
+          
+        </form>
+      {% endblock %}

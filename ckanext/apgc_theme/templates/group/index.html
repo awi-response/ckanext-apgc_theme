@@ -1,0 +1,78 @@
+{% extends "page.html" %}
+
+{% block subtitle %}
+ {% if group_type == "category" %}
+   {{ _('Categories') }}
+ {% elif group_type == "collection" %}
+   {{ _('Collections') }}
+ {% else %}
+   {{ _('Projects') }}
+ {% endif %}
+{% endblock %}
+
+{% block breadcrumb_content %}
+ {% if group_type == "category" %}
+   <li class="active">{% link_for _('Categories'), named_route=group_type+'.index' %}</li>
+ {% elif group_type == "collection" %}
+   <li class="active">{% link_for _('Collections'), named_route=group_type+'.index' %}</li>
+ {% else %}
+   <li class="active">{% link_for _('Projects'), named_route=group_type+'.index' %}</li>
+ {% endif %}
+{% endblock %}
+
+{% block page_header %}{% endblock %}
+
+{% block page_primary_action %}
+  {% if h.check_access('group_create') %}
+    {% link_for _('Add Group'), named_route=group_type+'.new', class_='btn btn-primary', icon='plus-square' %}
+  {% endif %}
+{% endblock %}
+
+{% block primary_content_inner %}
+ {% if group_type == "category" %}
+  <h1 class="hide-heading">{{ _('Categories') }}</h1>
+ {% elif group_type == "collection" %}
+  <h1 class="hide-heading">{{ _('Collections') }}</h1>
+ {% else %}
+  <h1 class="hide-heading">{{ _('Projects') }}</h1>
+ {% endif %}
+  {% block groups_search_form %}
+   {% if group_type == "category" %}
+    {% snippet 'snippets/search_form.html', form_id='group-search-form', type='group', query=q, sorting_selected=sort_by_selected, count=page.item_count, placeholder=_('Search categories'), show_empty=request.params, no_bottom_border=true if page.items, sorting = [(_('Name Ascending'), 'title asc'), (_('Name Descending'), 'title desc')] %}
+   {% elif group_type == "collection" %}
+    {% snippet 'snippets/search_form.html', form_id='group-search-form', type='group', query=q, sorting_selected=sort_by_selected, count=page.item_count, placeholder=_('Search collections'), show_empty=request.params, no_bottom_border=true if page.items, sorting = [(_('Name Ascending'), 'title asc'), (_('Name Descending'), 'title desc')] %}
+   {% else %}
+    {% snippet 'snippets/search_form.html', form_id='group-search-form', type='group', query=q, sorting_selected=sort_by_selected, count=page.item_count, placeholder=_('Search projects'), show_empty=request.params, no_bottom_border=true if page.items, sorting = [(_('Name Ascending'), 'title asc'), (_('Name Descending'), 'title desc')] %}
+   {% endif %}
+  {% endblock %}
+  {% block groups_list %}
+    {% if page.items or request.params %}
+      {% if page.items %}
+       {% if group_type == "category" %}
+        {% snippet "group/snippets/category_list.html", groups=page.items %}
+       {% elif group_type == "collection" %}
+        {% snippet "group/snippets/collection_list.html", groups=page.items %}
+       {% else %}
+        {% snippet "group/snippets/group_list.html", groups=page.items %}
+       {% endif %}
+      {% endif %}
+    {% else %}
+      <p class="empty">
+        {{ _('There are currently no groups for this site') }}.
+        {% if h.check_access('group_create') %}
+          {% link_for _('How about creating one?'), named_route=group_type+'.new' %}</a>.
+        {% endif %}
+      </p>
+    {% endif %}
+  {% endblock %}
+  {% block page_pagination %}
+
+    {{ page.pager(q=q or '', sort=sort_by_selected or '') }}
+
+
+  {% endblock %}
+{% endblock %}
+
+{% block secondary_content %}
+  {% snippet "group/snippets/helper.html" %}
+{% endblock %}
