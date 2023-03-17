@@ -1,4 +1,4 @@
-[![Tests](https://github.com/awi-response/ckanext-apgc-theme/workflows/Tests/badge.svg?branch=main)](https://github.com/awi-response/ckanext-apgc-theme/actions)
+[![Tests](https://github.com/awi-response/ckanext-apgc_theme/workflows/Tests/badge.svg?branch=main)](https://github.com/awi-response/ckanext-apgc_theme/actions)
 
 # ckanext-apgc_theme
 
@@ -24,7 +24,7 @@ To install ckanext-apgc_theme:
 
 2. Clone the source and install it on the virtualenv
 
-    git clone https://github.com/awi-response/ckanext-apgc-theme.git
+    git clone https://github.com/awi-response/ckanext-apgc_theme.git
     cd ckanext-apgc_theme
     pip install -e .
 	pip install -r requirements.txt
@@ -48,7 +48,7 @@ None at present
 To install ckanext-apgc_theme for development, activate your CKAN virtualenv and
 do:
 
-    git clone https://github.com/awi-response/ckanext-apgc-theme.git
+    git clone https://github.com/awi-response/ckanext-apgc_theme.git
     cd ckanext-apgc_theme
     python setup.py develop
     pip install -r dev-requirements.txt
