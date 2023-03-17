@@ -1,0 +1,95 @@
+<div role="main" class="hero">
+  <div class="container">
+    <div class="row row1" style="margin-bottom: 20px">
+	  <div class="span12 col1">
+	   <div class="module-content box">
+             <div class="hint"><div class="banner-hint"></div>
+				<img class="centerimg" src="uploads/images/polygons_banner.jpg" >
+			 </div>
+
+		<div class="row">
+		  <div class="span2 col1"></div>
+		  <div class="span8 col1" style="margin-top: 20px; padding: 30px 0 0 0">
+		    <a href="about" title="What is the Arctic Permafrost Geospatial Centre?">
+			<img class="centerimg centerlogo" alt="Arctic Permafrost Geospatial Centre" src="base/images/logo_complete_apgc.png">
+			</a>
+		  </div>
+	  <div class="span2 col1"></div>
+		</div>
+	     
+		<div class="row rowsearch">
+		  <div class="span2 col1"></div>
+		  <div class="span8 col1" style="margin-bottom: 20px">
+				
+		   {% block search %}
+			{% snippet 'home/snippets/search.html' %}
+ 
+			<div class="row wrapper front">
+		   	{% snippet "spatial/snippets/spatial_query.html", default_extent="[[60, -100], [80, 100]]" %}
+        			<form class="section site-search simple-input" action="/dataset" method="get">
+        			</form>	
+			</div>
+
+		   {% endblock %}
+	
+		  </div>
+		  <div class="span2 col1"></div>
+		</div>
+	   </div>
+	  </div>
+	 </div>
+
+   <div class="row row1">
+          <div class="span12 col1">
+           <div class="toggleBox">
+              <input name="toggleContent" id="toggleContent" type="checkbox" >
+              <label for="toggleContent" class="open toggleOpen">Dataset Collections</label>
+              <label for="toggleContent" class="close toggleClose">Dataset Collections</label>
+              <div class="toggleList">
+                 <p>This is a selection of the most popular dataset collections. If you want to search for other collections, go <a href="/group">here</a>.</p>
+                 {% snippet 'group/snippets/collection_list.html',
+				 groups=h.apgc_theme_most_popular_groups() %}
+
+              </div>
+           </div>
+           <div class="poggleBox">
+              <input name="poggleContent" id="poggleContent" type="checkbox" >
+              <label for="poggleContent" class="open toggleOpen">Involved Projects</label>
+              <label for="poggleContent" class="close toggleClose">Involved Projects</label>
+              <div class="poggleList">
+                 <p>This is a selection of the most popular projects. If you want to search for other projects involved, go <a href="/group">here</a>.</p>
+                 {% snippet 'group/snippets/project_list.html',
+				 groups=h.apgc_theme_most_popular_groups() %}
+
+              </div>
+           </div>
+
+	 </div>
+
+      <div class="span6 col1">
+        {% block promoted %}
+          {% snippet 'home/snippets/promoted.html' %}
+        {% endblock %}
+      </div>
+	  <div class="span6 col2">
+        {% block featured_group %}
+          {% snippet 'home/snippets/featured_group.html' %}
+        {% endblock %}
+      </div>
+	  <div class="span6 col2">
+        <div class="box">
+			<header class="module-heading latest-heading webgis-heading">
+				<a class="module-image" href="group/persys">
+				<img src="uploads/group/logo_persys-web.png" alt="persys" />
+				</a>
+				<h3 class="media-heading"><a href="https://maps.awi.de/map/map.html?cu=Globpermafrost_Overview" target="_blank" title="opens PerSys WebGIS in new tab">PerSys WebGIS</a> for GlobPermafrost data</h3>				
+			</header>
+			<div class="module-content webgis-feature">
+				<a target="_blank" href="https://maps.awi.de/map/map.html?cu=Globpermafrost_Overview" title="opens PerSys WebGIS in new tab">
+				<img class="webgis-image" src="uploads/images/PerSys_webgis.png" alt="persys_webgis" /></a>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>

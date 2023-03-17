@@ -1,0 +1,31 @@
+{# {% block group_list %}
+<ul class="media-grid" data-module="media-grid">
+	{% block group_list_inner %}
+  {% for group in groups %}
+    {% snippet "group/snippets/group_item.html", group=group, position=loop.index %}
+  {% endfor %}
+  {% endblock %}
+</ul>
+{% endblock %}
+#}
+
+{% block group_list %}
+<ul class="media-grid" data-module="media-grid">
+ {% block group_list_inner %}
+  {% set indexed = [0] %}
+  {% for group in groups %}
+{# For the Subgroups: #}
+   {% if groups %}
+    {% snippet "group/snippets/group_item.html", group=group, position=loop.index %}  
+    {% if indexed.append(indexed.pop() + 1) %}{% endif %}
+   {% endif %}
+  {% endfor %}
+  {% if indexed[0] == 0 %}
+          <p class="empty">{{ _('No projects found for your search.') }}</p> 
+          <p class="empty">{{ _('Use the "Dataset Collections" or "Categories" tab to see if collections or categories were found with your search term or try another search.') }}</p> 
+  {% endif %}
+
+ {% endblock %}
+</ul>
+{% endblock %}
+

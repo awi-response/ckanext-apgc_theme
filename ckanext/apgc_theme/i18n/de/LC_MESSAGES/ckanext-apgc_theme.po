@@ -1,0 +1,488 @@
+# German translations for ckanext-apgc_theme.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the ckanext-apgc_theme
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-apgc_theme 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-06-03 13:53+0200\n"
+"PO-Revision-Date: 2022-06-03 13:58+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ckanext/apgc_theme/templates/footer.html:8
+msgid "About {0}"
+msgstr "Über {0}"
+
+#: ckanext/apgc_theme/templates/footer.html:14
+msgid "CKAN API"
+msgstr "CKAN API"
+
+#: ckanext/apgc_theme/templates/footer.html:15
+msgid "Open Knowledge Foundation"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/footer.html:35
+msgid "Privacy Notice"
+msgstr "Datenschutzhinweis"
+
+#: ckanext/apgc_theme/templates/group/read_base.html:5
+#: ckanext/apgc_theme/templates/group/snippets/info.html:38
+#: ckanext/apgc_theme/templates/header.html:8
+#: ckanext/apgc_theme/templates/snippets/organization.html:61
+msgid "Datasets"
+msgstr "Datensätze"
+
+#: ckanext/apgc_theme/templates/group/index.html:5
+#: ckanext/apgc_theme/templates/group/index.html:15
+#: ckanext/apgc_theme/templates/group/index.html:33
+#: ckanext/apgc_theme/templates/header.html:9
+msgid "Categories"
+msgstr "Kategorien"
+
+#: ckanext/apgc_theme/templates/group/index.html:9
+#: ckanext/apgc_theme/templates/group/index.html:19
+#: ckanext/apgc_theme/templates/group/index.html:37
+#: ckanext/apgc_theme/templates/header.html:10
+msgid "Projects"
+msgstr "Projekte"
+
+#: ckanext/apgc_theme/templates/group/index.html:7
+#: ckanext/apgc_theme/templates/group/index.html:17
+#: ckanext/apgc_theme/templates/group/index.html:35
+#: ckanext/apgc_theme/templates/header.html:11
+msgid "Collections"
+msgstr "Sammlungen"
+
+#: ckanext/apgc_theme/templates/group/read_base.html:4
+#: ckanext/apgc_theme/templates/header.html:12
+msgid "About"
+msgstr "Über uns"
+
+#: ckanext/apgc_theme/templates/header.html:23
+msgid "Search Datasets"
+msgstr "Datensuche"
+
+#: ckanext/apgc_theme/templates/header.html:24
+#: ckanext/apgc_theme/templates/home/snippets/search.html:11
+msgid "Search"
+msgstr "Suche"
+
+#: ckanext/apgc_theme/templates/group/index.html:27
+#: ckanext/apgc_theme/templates/user/dashboard_groups.html:7
+msgid "Add Group"
+msgstr "Füge Gruppe hinzu"
+
+#: ckanext/apgc_theme/templates/group/index.html:41
+msgid "Search categories"
+msgstr "Suche nach Kategorien"
+
+#: ckanext/apgc_theme/templates/group/index.html:41
+#: ckanext/apgc_theme/templates/group/index.html:43
+#: ckanext/apgc_theme/templates/group/index.html:45
+msgid "Name Ascending"
+msgstr "Name aufsteigend"
+
+#: ckanext/apgc_theme/templates/group/index.html:41
+#: ckanext/apgc_theme/templates/group/index.html:43
+#: ckanext/apgc_theme/templates/group/index.html:45
+msgid "Name Descending"
+msgstr "Name absteigend"
+
+#: ckanext/apgc_theme/templates/group/index.html:43
+msgid "Search collections"
+msgstr "Suche nach Sammlungen"
+
+#: ckanext/apgc_theme/templates/group/index.html:45
+msgid "Search projects"
+msgstr "Suche Projekte"
+
+#: ckanext/apgc_theme/templates/group/index.html:61
+msgid "There are currently no groups for this site"
+msgstr "Derzeit gibt es keine Gruppen für diese Seite"
+
+#: ckanext/apgc_theme/templates/group/index.html:63
+msgid "How about creating one?"
+msgstr "Wie wäre es, eine zu erstellen?"
+
+#: ckanext/apgc_theme/templates/group/read_base.html:6
+msgid "Activity Stream"
+msgstr "Aktivitätsanzeige"
+
+#: ckanext/apgc_theme/templates/group/snippets/category_item.html:22
+#: ckanext/apgc_theme/templates/group/snippets/collection_item.html:23
+#: ckanext/apgc_theme/templates/group/snippets/group_item.html:23
+msgid "{num} Dataset"
+msgid_plural "{num} Datasets"
+msgstr[0] "{num} Datensatz"
+msgstr[1] "{num} Datensätze"
+
+#: ckanext/apgc_theme/templates/group/snippets/category_item.html:24
+#: ckanext/apgc_theme/templates/group/snippets/collection_item.html:25
+#: ckanext/apgc_theme/templates/group/snippets/group_item.html:25
+msgid "0 Datasets"
+msgstr "0 Datensätze"
+
+#: ckanext/apgc_theme/templates/group/snippets/helper.html:8
+msgid ""
+"<p>Groups at APGC are thematic <b>categories</b> and <b>collections</b> "
+"of datasets or represent different <b>projects</b> and networks, that "
+"produce, collect and/or distribute data.</p> <p>Click on a group to see "
+"more information about the category, project or collection and all its "
+"datasets.</p>"
+msgstr ""
+"<p>Gruppen im APGC sind thematische <b>Kategorien</b> und <b>Sammlungen</b> "
+"von Datensätzen oder repräsentieren verschiedene Projekte und Netzwerke, "
+"die Daten produzieren, sammeln und/oder verbreiten.</p> <p>Klicken Sie auf eine Gruppe,"
+" um mehr Informationen über die Kategorie, das Projekt oder die Sammlung und alle dazugehörigen Datensätze zu erhalten.</p>"
+
+#: ckanext/apgc_theme/templates/home/snippets/search.html:2
+msgid "E.g. permafrost"
+msgstr "Z.b. Permafrost"
+
+#: ckanext/apgc_theme/templates/organization/snippets/helper.html:8
+msgid ""
+"Organizations are used to create, manage and publish collections of "
+"datasets. Every dataset has to be owned by an Organization."
+msgstr "Organisationen werden verwendet, um Sammlungen von Datensätzen zu erstellen,"
+" zu verwalten und zu veröffentlichen. Jeder Datensatz muss Eigentum einer Organisation sein."
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:33
+msgid "Format"
+msgstr "Format"
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:37
+msgid "License"
+msgstr "Lizenz"
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:26
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:31
+msgid "Author"
+msgstr "Autor"
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:38
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:43
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:50
+msgid "Version"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:57
+msgid "State"
+msgstr "Status"
+
+#: ckanext/apgc_theme/templates/package/snippets/preview_sidebar.html:23
+msgid "Data Preview"
+msgstr "Datenvorschau"
+
+#: ckanext/apgc_theme/templates/package/snippets/preview_sidebar.html:43
+msgid "Detailed WebGIS View"
+msgstr "Detailierte WebGIS Ansicht"
+
+#: ckanext/apgc_theme/templates/package/snippets/preview_sidebar.html:52
+msgid "APGC-Map Viewer"
+msgstr "APGC Kartenanwendung"
+
+#: ckanext/apgc_theme/templates/package/snippets/resources_list.html:42
+msgid "This dataset has no data"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/organization.html:23
+msgid "Publisher"
+msgstr "Herausgeber"
+
+msgid "Publishers"
+msgstr "Herausgeber"
+
+msgid "Imprint"
+msgstr "Impressum"
+
+msgid "Filter by location"
+msgstr "Nach Standort filtern"
+
+msgid "Provided by"
+msgstr "Bereitgestellt durch"
+
+msgid "Initiated by"
+msgstr "Initiiert von"
+
+msgid "The Arctic Permafrost Geospatial Centre (APGC) offers you detailed metadata descriptions and visualizations, as well as the direct access link to Open Access Geospatial Data on permafrost."
+msgstr "Das Arctic Permafrost Geospatial Centre (APGC) bietet Ihnen detaillierte Metadatenbeschreibungen und Visualisierungen sowie den direkten Zugang zu Open Access Geodaten zum Thema Permafrost."
+
+msgid "This catalog is citable by"
+msgstr "Dieser Katalog ist zitierbar durch eine"
+
+msgid "Featured Dataset:"
+msgstr "Ausgewählter Datensatz:"
+
+msgid "latest Datasets"
+msgstr "neueste Datensätze"
+
+msgid "Powered by"
+msgstr "Unterstützt durch"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:38
+msgid "Biogeo-chemistry"
+msgstr "Biogeo-chemie"
+
+msgid "Biogeochemistry"
+msgstr "Biogeochemie"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:44
+msgid "Ground Deformation"
+msgstr "Boden-Deformation"
+
+msgid "Ground Deformation"
+msgstr "Boden-Deformation"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:50
+msgid "Ground Ice"
+msgstr "Bodeneis"
+
+msgid "Ground Ice"
+msgstr "Bodeneis"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:56
+msgid "Hydrology"
+msgstr "Hydrologie"
+
+msgid "Hydrology"
+msgstr "Hydrologie"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:62
+msgid "Land Cover"
+msgstr "Land-bedeckung"
+
+msgid "Land Cover"
+msgstr "Landbedeckung"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:68
+msgid "Landscape Dynamics"
+msgstr "Landschafts-dynamik"
+
+msgid "Landscape Dynamics"
+msgstr "Landschaftsdynamik"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:68
+msgid "Periglacial Inventories"
+msgstr "Periglaziale Inventare"
+
+msgid "Periglacial Inventories"
+msgstr "Periglaziale Inventare"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:68
+msgid "Properties & Extent"
+msgstr "Eigenschaften & Ausmaß"
+
+msgid "Properties & Extent"
+msgstr "Eigenschaften & Ausmaß"
+
+#: ckanext/apgc_theme/templates/home/layout1.html:68
+msgid "Socio-Economic"
+msgstr "Sozio-ökonomisch"
+
+msgid "Socio-Economic"
+msgstr "Sozio-ökonomisch"
+
+msgid "Identifier"
+msgstr "Identifikator"
+
+msgid "Project(s)"
+msgstr "Projekt(e)"
+
+msgid "Institute"
+msgstr "Institut"
+
+msgid "Institutes"
+msgstr "Institute"
+
+msgid "Publication Date"
+msgstr "Publikationsdatum"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "Product"
+msgstr "Produkt"
+
+msgid "Products"
+msgstr "Produkte"
+
+msgid "Sensor"
+msgstr "Sensor(en)"
+
+msgid "Sensors"
+msgstr "Sensoren"
+
+msgid "Keywords"
+msgstr "Stichworte"
+
+msgid "Data Formats"
+msgstr "Datenformate"
+
+msgid "First Authors"
+msgstr "Erstautoren"
+
+msgid "Files"
+msgstr "Dateien"
+
+msgid "Variables [Units]"
+msgstr "Variablen [Einheiten]"
+
+msgid "Region"
+msgstr "Region"
+
+msgid "Regions"
+msgstr "Regionen"
+
+msgid "Spatial Reference"
+msgstr "Räumlicher Bezug"
+
+msgid "Spatial Resolution"
+msgstr "Räumliche Auflösung"
+
+msgid "Spatial Coverage"
+msgstr "Räumliche Abdeckung"
+
+msgid "Temporal Coverage"
+msgstr "Zeitliche Abdeckung"
+
+msgid "Temporal Resolution"
+msgstr "Zeitliche Auflösung"
+
+msgid "Format"
+msgstr "Format(e)"
+
+msgid "Dataset extent"
+msgstr "Ausdehnung des Datensatzes"
+
+msgid "Metadata Access"
+msgstr "Metadaten-Zugang"
+
+msgid "Clear"
+msgstr "Löschen"
+
+msgid "Citation"
+msgstr "Zitierung"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Explore this Data"
+msgstr "Diese Daten erkunden"
+
+msgid "Text Citation"
+msgstr "Text Zitierung"
+
+msgid "BibTeX Citation"
+msgstr "BibTeX Zitierung"
+
+msgid "RIS Citation"
+msgstr "RIS Zitierung"
+
+msgid "Dataset collections, categories and projects"
+msgstr "Datensatz-Sammlungen, -Kategorien und -Projekte"
+
+msgid "Product Guide"
+msgstr "Produktführer"
+
+msgid "Help Guide"
+msgstr "Hilfe-Leitfaden"
+
+msgid "In order to use these data, you must cite this data set with the following citation:"
+msgstr "Bei Verwendung dieser Daten, müssen Sie diesen Datensatz mit einer der folgenden Quellenangaben zitieren:"
+
+msgid "The Arctic Permafrost Geospatial Centre (APGC)"
+msgstr "Das Arctic Permafrost Geospatial Centre (APGC)"
+
+msgid "APGC is an Open Access Circum-Arctic Geospatial Data Portal that promotes, describes and visualizes geospatial permafrost data. A data catalogue and a WebGIS application allow to easily discover and view data and metadata. Data can be downloaded directly via link to the publishing data repository."
+msgstr "APGC ist ein Offenes Geodaten-Portal für die Arktis, das räumliche Permafrostdaten verbreitet, beschreibt und visualisiert. Ein Datenkatalog und eine WebGIS-Anwendung ermöglichen das einfache Auffinden und Anzeigen von Daten und Metadaten. Die Daten können direkt über einen Link zum veröffentlichenden Datenarchiv heruntergeladen werden."
+
+msgid "Mission"
+msgstr "Aufgabe"
+
+msgid "APGC provides open access to high-quality scientific data related to permafrost in the Arctic."
+msgstr "Das APGC bietet freien Zugang zu hochwertigen wissenschaftlichen Daten über Permafrost in der Arktis."
+
+msgid "APGC facilitates discovery, view, dissemination, and archival of permafrost geospatial information."
+msgstr "Das APGC erleichtert die Suche, Ansicht, Verbreitung und Archivierung von Geoinformationen über Permafrost."
+
+msgid "APGC supports metadata documentation and exchange."
+msgstr "Das APGC unterstützt die Dokumentation und den Austausch von Metadaten."
+
+msgid "Data Criteria"
+msgstr "Datenkriterien"
+
+msgid "New submissions to the catalogue are evaluated for publication using the following criteria."
+msgstr "Neue Beiträge für den Katalog werden anhand der folgenden Kriterien zur Aufnahme in den Katalog bewertet:"
+
+msgid "<b>PERMAFROST FOCUS:</b> Data directly or indirectly measures and/or classifies permafrost characteristics in the Arctic, Antarctica, or mountain permafrost areas, for example soil temperatures, ground ice content, land cover, topography and many more."
+msgstr "<b>SCHWERPUNKT PERMAFROST:</b> Die Daten messen und/oder klassifizieren direkt oder indirekt Permafrostmerkmale in der Arktis, der Antarktis oder in Permafrostgebieten in Gebirgen, z. B. Bodentemperaturen, Bodeneisgehalt, Landbedeckung, Topografie und vieles mehr."
+
+msgid "<b>HIGH SIGNIFICANCE AND IMPACT:</b> The data addresses an important problem or critical barrier to progress in the field of permafrost research. It provides, for example, circum-arctic coverage, is important to many different disciplines, and shows new or improved measurements."
+msgstr "<b>HOHE BEDEUTUNG UND WIRKUNG:</b> Die Daten behandeln ein wichtiges Problem oder ein kritisches Hindernis für Fortschritte auf dem Gebiet der Permafrostforschung. Sie decken z. B. die gesamte Arktis ab, sind für viele verschiedene Disziplinen wichtig und zeigen neue oder verbesserte Messungen."
+
+msgid "<b>OPEN ACCESS:</b> Metadata and data are accessible and published in a repository."
+msgstr "<b>OFFENER ZUGANG:</b> Metadaten und Daten sind frei zugänglich und wurden in einem Repository veröffentlicht."
+
+msgid "<b>HIGH QUALITY:</b> Data is validated. Metadata reports an accuracy assessment."
+msgstr "<b>HOHE QUALITÄT:</b> Die Daten wurden validiert. Metadaten enthalten eine Bewertung der Genauigkeit."
+
+msgid "<b>METADATA:</b> Metadata adequately describes the processing of the data and the data is reproducible with the given metadata."
+msgstr "<b>METADATEN:</b> Die Metadaten beschreiben die Verarbeitung der Daten in angemessener Weise, und die Daten sind mit den gegebenen Metadaten reproduzierbar."
+
+msgid "Funding and Support"
+msgstr "Finanzierung und Unterstützung"
+
+msgid "APGC is maintained by the <a href=\"https://www.awi.de/en/science/geosciences/permafrost-research.html\">Permafrost Research section</a> of the Alfred Wegener Institute (AWI), Helmholtz Centre for Polar and Marine Research. The WebGIS application has been developed by the <a href=\"https://www.awi.de/en/about-us/service/computing-centre.html\">AWI Computing and Data Center</a>. The APGC has been initiated by the ERC project <a href=\"https://www.awi.de/en/science/junior-groups/peta-carb.html\">Rapid Permafrost Thaw in a Warming Arctic and Impacts on the Soil Organic Carbon Pool (PETA-CARB)</a>, and the European Space Agency (ESA) project <a href=\"https://www.globpermafrost.info\">GlobPermafrost</a>."
+msgstr "Das APGC wird unterhalten von der <a href=\"https://www.awi.de/en/science/geosciences/permafrost-research.html\">Sektion Permafrostforschung</a> vom Alfred-Wegener-Institut (AWI), Helmholtz-Zentrum für Polar- und Meeresforschung. Die WebGIS wurde entwickelt vom <a href=\"https://www.awi.de/en/about-us/service/computing-centre.html\">AWI Computer und Rechenzentrum</a>. Das APGC wurde initiiert vom ERC Projekt <a href=\"https://www.awi.de/en/science/junior-groups/peta-carb.html\">Schnelles Permafrosttauen und Folgen für den Permafrostkohlenstoffspeicher (PETA-CARB)</a> und einem Projekt der Europäischen Weltraumorganisation (ESA): <a href=\"https://www.globpermafrost.info\">GlobPermafrost</a>."
+
+msgid "Alfred Wegener Institute"
+msgstr "Alfred-Wegener-Institut"
+
+msgid "Helmholtz Centre for Polar and Marine Sciences"
+msgstr "Helmholtz-Zentrum für Polar- und Meeresforschung"
+
+msgid "Telegrafenberg A45 | 14473 Potsdam"
+msgstr ""
+
+msgid "Director:"
+msgstr "Leiter:"
+
+msgid "Managing Director:"
+msgstr "Leitender Manager:"
+
+msgid "System Technician:"
+msgstr "Systemtechniker:"
+
+msgid "Mail:"
+msgstr "E-Mail:"
+
+msgid "Phone:"
+msgstr "Telefon:"
+
+msgid "Is Supplement to"
+msgstr "Ist Zusatz zu"
+
+msgid "Related to"
+msgstr "Zusammenhang mit"
+
+msgid "Publication this dataset is a supplement to"
+msgstr "die übergeordnete Publikation zu diesem Datensatz"
+
+msgid "Map"
+msgstr "Kartenanwendung"
+
+msgid "Data in APGC-Map"
+msgstr "Daten in Kartenanwendung"

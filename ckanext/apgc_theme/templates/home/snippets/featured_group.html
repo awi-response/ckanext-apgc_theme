@@ -1,0 +1,12 @@
+{% set groups = h.get_featured_groups(count=40) %}
+
+{% for group in groups %}
+ {% if group.name == "apgc-latest"  %}
+  <div class="box">
+    {% snippet 'snippets/group_item_latest.html', group=group, truncate=50, truncate_title=35 %}
+  </div>
+ {% else %}
+
+
+ {% endif %}
+{% endfor %}

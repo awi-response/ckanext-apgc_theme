@@ -1,0 +1,50 @@
+{% ckan_extends %}
+
+{% block primary_content_inner %}
+  {{ super() }}
+{#  
+  <div>
+	{% if c.group_dict.name == "page21" %}	  	    
+	   <iframe src="http://www.gtnpdatabase.org/csv" scrolling="no" marginwidth="0" width="100%" height="600px" frameborder="0">
+	{% endif %}
+	
+  </div>
+#}
+  <div>
+	{% for key, value in h.sorted_extras(group_dict.extras) %}
+	  {% if key == "Project-Website" %}	    
+	    <h2><a href="{{ value|e }}" target="_blank">{% trans %}Link to Project-Website{% endtrans %}</a></h2>
+	          {% endif %}
+	{% endfor %}
+  </div>
+
+  <div>
+	{% if group_dict.groups %}
+		<br>
+		<h2>Product Groups:</h2>
+		<form method="post">
+		 <div class="groupimg">
+		  {% snippet 'group/snippets/subgroup_list.html', groups=group_dict.groups %}
+    		 </div>
+		</form>
+	  {% else %}
+		<p class="empty"></p>
+	{% endif %}
+  </div>
+
+  <div>
+	{% for key, value in h.sorted_extras(group_dict.extras) %}
+	  {% if key == "WebGIS-Link" %}
+	    <h2>{% trans %}WebGIS of the Project{% endtrans %}</h2>
+	    <p>{% trans %}Here you have the possibility to have a deeper look into the spatial data.{% endtrans %} <a href="{{ value|e }}" target="_blank">{% trans %}Open it in new Tab!{% endtrans %}</a></p>
+	    <iframe width="100%" height="460" frameborder="0" src="{{ value|e }}"></iframe>
+      {% endif %}
+	{% endfor %}
+  </div>
+  
+  {% block group_extras %}
+
+  {% endblock %}
+
+{% endblock %}
+

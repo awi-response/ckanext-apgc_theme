@@ -1,0 +1,26 @@
+{% set intro = g.site_intro_text %}
+
+<div class="module-content box" style="padding-bottom: 39px;">
+  <div>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h2 class="page-heading" style="line-height: 1;">{% trans %}Featured Dataset:{% endtrans %} <a href="dataset/pex">Permafrost Extent and Ground Temperature Map, Northern Hemisphere</a> </h2>
+      <div class="notes embedded-content">
+       <p>{% trans %}The product provides modeled mean annual ground temperatures (MAGT) at the top of the permafrost for the Northern Hemisphere at 1 km spatial resolution. Permafrost probability (fraction values from 0 to 1) is assigned to each grid cell with MAGT higher than 0 degree Celsius. Based on its permafrost probability each grid cell is classified as continuous, discontinuous and sporadic permafrost.{% endtrans %}</p>
+      </div>    
+    {% endif %}
+  </div>
+
+  {% block home_image %}
+    <section class="featured media-overlay hidden-phone">
+      {% block home_image_content %}
+        <p><a class="media-image" href="dataset/pex">
+            <img src="/dataset/adb9e43e-fc49-4074-8faf-4b2ec1d4e69d/resource/b1382479-1639-420f-8148-30b20127ad54/download/thumbnailuiopexmagtm3.020002016.png" alt="dataset image" style="padding-right: 10px; width:50%; height:auto; float:left; min-width: 50%;" />
+           </a>{% trans %}The NetCDF files contain resampled data from GeoTiffs to approx. 5, 10 and 25 km spatial resolution. The data contain both metric x and y coordinates in addition to geographic coordinates. Each NetCDF file contains datasets of mean annual ground temperature, permafrost occurrence probability and standard deviation of mean annual ground temperature.{% endtrans %}
+        </p>
+
+      {% endblock %}
+    </section>
+  {% endblock %}
+</div>

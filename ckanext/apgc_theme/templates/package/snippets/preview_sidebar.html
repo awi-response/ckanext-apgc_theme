@@ -1,0 +1,56 @@
+{#
+
+define preview for sidebar
+
+the easiest way is shown here:
+
+<div>
+	{% for key, value in h.sorted_extras(pkg_dict.extras) %}
+	  {% if key == "preview" %}
+	    <a href="{{ value|e }}"><img class="sidebar-thumbnail" src="{{ value|e }}" title="{% trans %}Data Preview{% endtrans %}"></a>    
+          {% endif %}
+	{% endfor %}
+</div>
+
+I put an image preview popup into it.
+
+#}
+
+{% for key, value in h.sorted_extras(pkg_dict.extras) %}
+  {% if key == "preview" %}
+           <section class="module module-narrow preview_side">
+            <div class="tooltippi"> 
+              <h2 class="module-heading"><i class="fa fa-eye"></i> {{ _('Data Preview') }}</h2>
+              <img class="sidebar-thumbnail" src="{{ value|e }}"> 
+              <span class="tooltipimage">
+	        <a href="{{ value|e }}"><img src="{{ value|e }}"></a>
+              </span>
+              {% if "Trends of Land Surface Change from Landsat time-series 1999-2014" in pkg_dict.title and pkg_dict.format == "Geotiff" %}
+                 <img class="sidebar-thumbnail" src="/uploads/images/hotspot_legende-01.png">
+              {% endif %}
+            </div>
+           </section>
+  {% endif %}
+{% endfor %}
+
+
+
+
+
+{% for key, value in h.sorted_extras(pkg_dict.extras) %}
+  {% if key == "WebGIS-Link" %}
+          <section class="module module-narrow webgis_teaser">
+     	  <h2 class="module-heading"><i class="fa fa-globe"></i> {{ _('Detailed WebGIS View') }}</h2>
+             <div class="teaser"><p class="teaser-text"><a class="teaser-hover" href="{{ value|e }}" target="_blank">{% trans %}Explore this Data{% endtrans %}</a></p></div> 
+          </section> 
+  {% endif %}
+{% endfor %}
+
+{% for key, value in h.sorted_extras(pkg_dict.extras) %}
+  {% if key == "APGC-Map" %}
+          <section class="module module-narrow apgc-map_teaser">
+     	  <h2 class="module-heading"><i class="fa fa-globe"></i> {{ _('APGC-Map Viewer') }}</h2>
+             <div class="map-teaser"><p class="map-teaser-text"><a class="teaser-hover" href="{{ value|e }}" target="_blank">{% trans %}Data in APGC-Map{% endtrans %}</a></p></div> 
+          </section> 
+  {% endif %}
+{% endfor %}
