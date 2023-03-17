@@ -1,0 +1,13 @@
+{% block group_list %}
+<ul class="media-grid" data-module="media-grid">
+ {% block group_list_inner %}
+  {% for group in groups %}
+
+   {% if "apgc-" not in group.name %}
+    {% snippet "group/snippets/group_item.html", group=group, position=loop.index %}
+   {% endif %}
+  {% endfor %}
+
+ {% endblock %}
+</ul>
+{% endblock %}

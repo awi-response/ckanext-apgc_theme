@@ -1,0 +1,14 @@
+# apgc_theme-js:
+#   filter: rjsmin
+#   output: ckanext-apgc_theme/%(version)s-apgc_theme.js
+#   contents:
+#     - js/apgc_theme.js
+#   extra:
+#     preload:
+#       - base/main
+
+# apgc_theme-css:
+#   filter: cssrewrite
+#   output: ckanext-apgc_theme/%(version)s-apgc_theme.css
+#   contents:
+#     - css/apgc_theme.css

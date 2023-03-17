@@ -1,0 +1,496 @@
+# German translations for ckanext-apgc_theme.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the ckanext-apgc_theme
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-apgc_theme 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-06-03 13:53+0200\n"
+"PO-Revision-Date: 2022-06-03 13:58+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ckanext/apgc_theme/templates/footer.html:8
+msgid "About {0}"
+msgstr "Über {0}"
+
+#: ckanext/apgc_theme/templates/footer.html:14
+msgid "CKAN API"
+msgstr "CKAN API"
+
+#: ckanext/apgc_theme/templates/footer.html:15
+msgid "Open Knowledge Foundation"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/footer.html:20
+msgid ""
+"<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
+"href=\"https://ckan.org\">CKAN</a>"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/footer.html:35
+msgid "Privacy Notice"
+msgstr "Datenschutzhinweis"
+
+#: ckanext/apgc_theme/templates/group/read_base.html:5
+#: ckanext/apgc_theme/templates/group/snippets/info.html:38
+#: ckanext/apgc_theme/templates/header.html:8
+#: ckanext/apgc_theme/templates/snippets/organization.html:61
+msgid "Datasets"
+msgstr "Datensätze"
+
+#: ckanext/apgc_theme/templates/group/index.html:5
+#: ckanext/apgc_theme/templates/group/index.html:15
+#: ckanext/apgc_theme/templates/group/index.html:33
+#: ckanext/apgc_theme/templates/header.html:9
+msgid "Categories"
+msgstr "Kategorien"
+
+#: ckanext/apgc_theme/templates/group/index.html:9
+#: ckanext/apgc_theme/templates/group/index.html:19
+#: ckanext/apgc_theme/templates/group/index.html:37
+#: ckanext/apgc_theme/templates/header.html:10
+msgid "Projects"
+msgstr "Projekte"
+
+#: ckanext/apgc_theme/templates/group/index.html:7
+#: ckanext/apgc_theme/templates/group/index.html:17
+#: ckanext/apgc_theme/templates/group/index.html:35
+#: ckanext/apgc_theme/templates/header.html:11
+msgid "Collections"
+msgstr "Sammlungen"
+
+#: ckanext/apgc_theme/templates/group/read_base.html:4
+#: ckanext/apgc_theme/templates/header.html:12
+msgid "About"
+msgstr "Über uns"
+
+#: ckanext/apgc_theme/templates/header.html:23
+msgid "Search Datasets"
+msgstr "Datensuche"
+
+#: ckanext/apgc_theme/templates/header.html:24
+#: ckanext/apgc_theme/templates/home/snippets/search.html:11
+msgid "Search"
+msgstr "Suche"
+
+#: ckanext/apgc_theme/templates/group/index.html:27
+#: ckanext/apgc_theme/templates/user/dashboard_groups.html:7
+msgid "Add Group"
+msgstr "Füge Gruppe hinzu"
+
+#: ckanext/apgc_theme/templates/group/index.html:41
+msgid "Search categories"
+msgstr "Suche nach Kategorien"
+
+#: ckanext/apgc_theme/templates/group/index.html:41
+#: ckanext/apgc_theme/templates/group/index.html:43
+#: ckanext/apgc_theme/templates/group/index.html:45
+msgid "Name Ascending"
+msgstr "Name aufsteigend"
+
+#: ckanext/apgc_theme/templates/group/index.html:41
+#: ckanext/apgc_theme/templates/group/index.html:43
+#: ckanext/apgc_theme/templates/group/index.html:45
+msgid "Name Descending"
+msgstr "Name absteigend"
+
+#: ckanext/apgc_theme/templates/group/index.html:43
+msgid "Search collections"
+msgstr "Suche nach Sammlungen"
+
+#: ckanext/apgc_theme/templates/group/index.html:45
+msgid "Search projects"
+msgstr "Suche Projekte"
+
+#: ckanext/apgc_theme/templates/group/index.html:61
+msgid "There are currently no groups for this site"
+msgstr "Derzeit gibt es keine Gruppen für diese Seite"
+
+#: ckanext/apgc_theme/templates/group/index.html:63
+msgid "How about creating one?"
+msgstr "Wie wäre es, eine zu erstellen?"
+
+#: ckanext/apgc_theme/templates/group/read_base.html:6
+msgid "Activity Stream"
+msgstr "Aktivitätsanzeige"
+
+#: ckanext/apgc_theme/templates/group/snippets/category_item.html:22
+#: ckanext/apgc_theme/templates/group/snippets/collection_item.html:23
+#: ckanext/apgc_theme/templates/group/snippets/group_item.html:23
+msgid "{num} Dataset"
+msgid_plural "{num} Datasets"
+msgstr[0] "{num} Datensatz"
+msgstr[1] "{num} Datensätze"
+
+#: ckanext/apgc_theme/templates/group/snippets/category_item.html:24
+#: ckanext/apgc_theme/templates/group/snippets/collection_item.html:25
+#: ckanext/apgc_theme/templates/group/snippets/group_item.html:25
+msgid "0 Datasets"
+msgstr "0 Datensätze"
+
+#: ckanext/apgc_theme/templates/group/snippets/category_item.html:28
+#: ckanext/apgc_theme/templates/group/snippets/category_item.html:29
+#: ckanext/apgc_theme/templates/group/snippets/collection_item.html:29
+#: ckanext/apgc_theme/templates/group/snippets/collection_item.html:30
+#: ckanext/apgc_theme/templates/group/snippets/group_item.html:29
+#: ckanext/apgc_theme/templates/group/snippets/group_item.html:30
+msgid "View {name}"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/group/snippets/category_item.html:33
+#: ckanext/apgc_theme/templates/group/snippets/collection_item.html:34
+#: ckanext/apgc_theme/templates/group/snippets/group_item.html:34
+msgid "Remove"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/group/snippets/category_item.html:33
+#: ckanext/apgc_theme/templates/group/snippets/collection_item.html:34
+#: ckanext/apgc_theme/templates/group/snippets/group_item.html:34
+msgid "Remove dataset from this group"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/group/snippets/helper.html:4
+msgid "What are Groups?"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/group/snippets/helper.html:8
+msgid ""
+"<p>Groups at APGC are thematic <b>categories</b> and <b>collections</b> "
+"of datasets or represent different <b>projects</b> and networks, that "
+"produce, collect and/or distribute data.</p> <p>Click on a group to see "
+"more information about the category, project or collection and all its "
+"datasets.</p>"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/group/snippets/info.html:16
+#: ckanext/apgc_theme/templates/snippets/organization.html:37
+#: ckanext/apgc_theme/templates/snippets/package_item.html:61
+msgid "Deleted"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/group/snippets/info.html:24
+#: ckanext/apgc_theme/templates/snippets/organization.html:45
+msgid "read more"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/group/snippets/subgroup_list.html:24
+msgid "No projects found for your search."
+msgstr ""
+
+#: ckanext/apgc_theme/templates/group/snippets/subgroup_list.html:25
+msgid ""
+"Use the \"Dataset Collections\" or \"Categories\" tab to see if "
+"collections or categories were found with your search term or try another"
+" search."
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/index2.html:4
+msgid "Welcome"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/about_text.html:1
+msgid ""
+"<img class=\"transparent\" alt=\"/base/images/logo_complete_apgc.png\" "
+"src=\"/base/images/logo_complete_apgc.png\" style=\"width: 266px; height:"
+" 126px;\"></img> <h2>The Arctic Permafrost Geospatial Centre (APGC)</h2> "
+"<!-- <p>is currently being designed as a web interface showcasing high "
+"level projects producing geospatial datasets with permafrost focus and "
+"will provide an entry point for their geospatial product dissemination "
+"needs.</p> <p>At the core of the APGC we are establishing two services "
+"for data discovery: an Open Access Data Catalogue and an Open Access "
+"WebGIS Application. The APGC Data Catalogue will allow searching for "
+"project-specific geospatial data by tags, keywords, data type and format,"
+" licence type, or geographically, provides a data preview figure, "
+"localizes the dataset on a zoom- and pan-capable basemap, displays a "
+"variety of metadata, and links to a permanent DOI-based archival link at "
+"the PANGAEA data repository. The APGC Data Catalogue will be based on the"
+" open source CKAN data catalogue architecture, allowing geospatial data "
+"categorization associated with defined projects based on metadata "
+"standards. The Data Catalogue will contain all final products of projects"
+" that will be featured here, for example the ERC PETA-CARB project and "
+"the IPA Action Group on Yedoma ice-rich permafrost. The WebGIS "
+"Application will rely on OGC-standardized Web Mapping Services (WMS) and "
+"Web Feature Service (WFS) technologies for data display and "
+"visualization. The WMS/WFS services are provided through the Data "
+"Catalogue. We are further evaluating the possibility to load external "
+"WMS/WFS services in the WebGIS Application. Legends will provide "
+"information on data attributes, and pop-up menus will provide information"
+" on metadata and a link to the archive location for a dataset. The WebGIS"
+" Application will provide a platform independent and visually interactive"
+" platform for displaying both raster and vector geospatial data from the "
+"project. </p> --> <p>APGC is an Open Access Circum-Arctic Geospatial Data"
+" Portal that promotes, describes and visualizes geospatial permafrost "
+"data. A data catalogue and a WebGIS application allow to easily discover "
+"and view data and metadata. Data can be downloaded directly via link to "
+"the publishing data repository.</p> <div style=\"border-bottom: 1px "
+"dotted #dddddd;\"></div> <h3>Mission</h3> <ul> <li>APGC provides open "
+"access to high-quality scientific data related to permafrost in the "
+"Arctic.</li> <li>APGC facilitates discovery, view, dissemination, and "
+"archival of permafrost geospatial information.</li> <li>APGC supports "
+"metadata documentation and exchange.</li> </ul> <br><h3>Data "
+"Criteria</h3> <p>New submissions to the catalogue are evaluated for "
+"publication using the following criteria.</p> <p><b>PERMAFROST FOCUS:</b>"
+" Data directly or indirectly measures and/or classifies permafrost "
+"characteristics in the Arctic, Antarctica, or mountain permafrost areas, "
+"for example soil temperatures, ground ice content, land cover, topography"
+" and many more.</p> <p><b>HIGH SIGNIFICANCE AND IMPACT:</b> The data "
+"addresses an important problem or critical barrier to progress in the "
+"field of permafrost research. It provides, for example, circum-arctic "
+"coverage, is important to many different disciplines, and shows new or "
+"improved measurements.</p> <p><b>OPEN ACCESS:</b> Metadata and data are "
+"accessible and published in a repository.</p> <p><b>HIGH QUALITY:</b> "
+"Data is validated. Metadata reports an accuracy assessment.</p> "
+"<p><b>METADATA:</b> Metadata adequately describes the processing of the "
+"data and the data is reproducible with the given metadata.</p> "
+"<br><h3>Funding and Support</h3> <p>APGC is maintained by the <a "
+"href=\"https://www.awi.de/en/science/geosciences/permafrost-"
+"research.html\">Permafrost Research section</a> of the Alfred Wegener "
+"Institute (AWI), Helmholtz Centre for Polar and Marine Research. The "
+"WebGIS application has been developed by the <a "
+"href=\"https://www.awi.de/en/about-us/service/computing-centre.html\">AWI"
+" Computing and Data Center</a>. The APGC has been initiated by the ERC "
+"project <a href=\"https://www.awi.de/en/science/junior-groups/peta-"
+"carb.html\">Rapid Permafrost Thaw in a Warming Arctic and Impacts on the "
+"Soil Organic Carbon Pool (PETA-CARB)</a>, and the European Space Agency "
+"(ESA) project <a "
+"href=\"https://www.globpermafrost.info\">GlobPermafrost</a>.</p> "
+"<br><h3>Contact</h3> <p><b>Alfred Wegener Institute</b></p> "
+"<p><b>Helmholtz Centre for Polar and Marine Sciences</b></p> "
+"<p>Telegrafenberg A45 | 14473 Potsdam</p> <br> <p><b>Director:</b> Prof. "
+"Dr. Guido Grosse</p> <p>Mail: guido.grosse[at]awi.de</p> <p>Phone: +49 "
+"(0)331 288 2100</p> <br> <p><b>Managing Director:</b> Dr. Sina Muster</p>"
+" <p><b>System Technician:</b> Sebastian Laboor</p> <p>Mail: "
+"apgc[at]awi.de</p> <p>Phone: +49 (0)331 288 20104</p>"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/search.html:2
+msgid "E.g. permafrost"
+msgstr "z.b. Permafrost"
+
+#: ckanext/apgc_theme/templates/home/snippets/search.html:6
+msgid "Search data"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/search.html:16
+msgid "Popular tags"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/stats.html:5
+msgid "{0} statistics"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/stats.html:11
+msgid "dataset"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/stats.html:11
+msgid "datasets"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/stats.html:17
+msgid "organization"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/stats.html:17
+msgid "organizations"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/stats.html:23
+msgid "group"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/home/snippets/stats.html:23
+msgid "groups"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/organization/snippets/helper.html:4
+msgid "What are Organizations?"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/organization/snippets/helper.html:8
+msgid ""
+"Organizations are used to create, manage and publish collections of "
+"datasets. Every dataset has to be owned by an Organization."
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/group_list.html:5
+msgid "Groups"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/group_list.html:14
+msgid "Associate this group with this dataset"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/group_list.html:14
+msgid "Add to group"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/group_list.html:30
+msgid "There are no groups associated with this dataset"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:11
+msgid "Additional Information"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:15
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:7
+#: ckanext/apgc_theme/templates/snippets/additional_info.html:11
+msgid "Field"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:16
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:8
+#: ckanext/apgc_theme/templates/snippets/additional_info.html:12
+msgid "Value"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:21
+msgid "Data last updated"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:22
+#: ckanext/apgc_theme/templates/package/resource_read.html:26
+#: ckanext/apgc_theme/templates/package/resource_read.html:30
+#: ckanext/apgc_theme/templates/package/resource_read.html:34
+msgid "unknown"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:25
+msgid "Metadata last updated"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:29
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:71
+msgid "Created"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:33
+msgid "Format"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/resource_read.html:37
+msgid "License"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:3
+#: ckanext/apgc_theme/templates/snippets/additional_info.html:7
+msgid "Additional Info"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:15
+msgid "Source"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:26
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:31
+msgid "Author"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:38
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:43
+msgid "Maintainer"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:50
+msgid "Version"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:57
+msgid "State"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/additional_info.html:63
+msgid "Last Updated"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/preview_sidebar.html:23
+msgid "Data Preview"
+msgstr "Datenvorschau"
+
+#: ckanext/apgc_theme/templates/package/snippets/preview_sidebar.html:43
+msgid "Detailed WebGIS View"
+msgstr "Detailierte WebGIS Ansicht"
+
+#: ckanext/apgc_theme/templates/package/snippets/preview_sidebar.html:52
+msgid "APGC-Map Viewer"
+msgstr "APGC Kartenanwendung"
+
+#: ckanext/apgc_theme/templates/package/snippets/resource_item.html:44
+msgid "Download"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/resources_list.html:13
+msgid "Data and Resources"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/resources_list.html:38
+#, python-format
+msgid ""
+"<p class=\"empty\">This dataset has no data, <a href=\"%(url)s\">why not "
+"add some?</a></p>"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/package/snippets/resources_list.html:42
+msgid "This dataset has no data"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/facet_list.html:103
+msgid "Show More {facet_type}"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/facet_list.html:106
+msgid "Show Only Popular {facet_type}"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/facet_list.html:110
+msgid "There are no {facet_type} that match this search"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/organization.html:23
+msgid "Publisher"
+msgstr "Herausgeber"
+
+#: ckanext/apgc_theme/templates/snippets/organization.html:48
+msgid "There is no description for this organization"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/package_item.html:50
+msgid "Private"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/package_item.html:59
+msgid "Draft"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/package_item.html:69
+msgid "Popular"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/snippets/package_item.html:76
+msgid "This dataset has no description"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/user/dashboard_groups.html:12
+msgid "My Groups"
+msgstr ""
+
+#: ckanext/apgc_theme/templates/user/dashboard_groups.html:20
+msgid "You are not a member of any groups."
+msgstr ""
+
+#: ckanext/apgc_theme/templates/user/dashboard_groups.html:22
+msgid "Create one now?"
+msgstr ""
+
+
