@@ -4,13 +4,15 @@ body {
 .hero {
     background: #EEE url("../../base/images/bg.png") !important;
   }
-/* 
+ 
 .hero .container {
-	padding: 10px;
-	background: #fff url("../../../base/images/bg.png");
+	padding-left: 0;
+	padding-right:0;
  }
-*/
-.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+.masthead {
+  padding: 0px !important;
+}
+.masthead .container {
     /*-webkit-box-shadow: 0 9px 10px -5px rgba(7,38,51,1);
 	-moz-box-shadow: 0 9px 10px -5px rgba(7,38,51,1);
 	box-shadow: 0 9px 10px -5px rgba(7,38,51,1);*/
@@ -18,13 +20,15 @@ body {
 	border-bottom: 4px solid #164154;
 	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
-	border-radius: 0 0 4px 4px;
-	
+	border-radius: 0 0 4px 4px;	
 }
 .account-masthead .container {
 	/*background: #003647 url("../../base/images/bg.png") repeat scroll 0 0
-	background: #456F81 url("../../base/images/bg.png") repeat scroll 0 0;*/
-	background: #072735	url("../../base/images/bg.png") repeat scroll 0 0 !important;
+	background: #456F81 url("../../base/images/bg.png") repeat scroll 0 0;
+	background: #072735	url("../../base/images/bg.png") repeat scroll 0 0 !important;*/
+}
+.account-masthead .container {
+	max-width: 1200px;
 }
 .header-image .logo img{
 	margin: 10px;
@@ -33,9 +37,7 @@ body {
     background: #eee url("../../base/images/bg.png") repeat scroll 0 0 !important;
     padding: 0 !important;
 }
-.account-masthead {
-    background: #eee url("../../base/images/bg.png") repeat scroll 0 0 !important;
-}
+
 .masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
     background-color: #072735;
 }
@@ -145,7 +147,7 @@ h3.media-heading, h1.heading{
 .module-content:last-child {
     margin-bottom: 0;
     padding-bottom: 50px;
-    overflow: hidden;
+
 }
 .dataset-list-thumbnail {
     max-width: 32.9%;   
@@ -167,8 +169,8 @@ h3.media-heading, h1.heading{
     background-color: #fff !important;
 }
 .search-box {
-    border: 1px solid #cccccc;
-    border-width: 1px 1px 0 1px;
+    border: 1px solid #cccccc !important;
+    border-width: 1px 1px 0 1px !important;
     border-radius: 4px 4px 0 0; 
 }
 .search-form .search-input.search-giant input {
@@ -201,9 +203,8 @@ img.centerimg {
 
 }
 .centerlogo {
-    height: 50%;
     min-width: 200px;
-    width: 50%;
+    width: 30%;
 }
 .hint{
     background-color: #f39200;
@@ -652,7 +653,7 @@ nav label:active { background: #ffffff; }
 /* ------------------------
    Anpassung 2.8.1 */
 .span4 {
-    width: 300px;
+    width: 300px !important;
 }
 [class*="span"] {
     float: left;
@@ -660,7 +661,7 @@ nav label:active { background: #ffffff; }
    
 }
 .span3 {
-    width: 220px;
+    width: 220px !important;
 }
 
 ul.unstyled, ol.unstyled {
@@ -670,7 +671,7 @@ ul.unstyled, ol.unstyled {
 }
 
 .span6 {
-    width: 49%;
+    width: 49% !important;	
 }
 .span6.col2 {
     margin: 0 0 0 23px;
@@ -680,6 +681,13 @@ ul.unstyled, ol.unstyled {
 }
 .span8 {
     width: 60%;
+}
+
+.homepage .module-search {
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .span2 {
     width: 20%;
@@ -707,6 +715,14 @@ img {
 .wrapper.front {
     margin: 0 0 30px;
     min-height: 0;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 60%;
+}
+
+#dataset-map {
+	padding: 0;
 }
 
 .dataset-map-expanded .front #dataset-map {
@@ -741,12 +757,6 @@ img {
    }
    .prepreview .prepreimage {
       right: 50px;
-   }
-}
-@media (min-width: 768px) {
-
-   .wrapper::before {
-       position: relative !important;
    }
 }
 
@@ -809,6 +819,13 @@ input, optgroup, select, textarea {
 {
   height: 250px;
 }
+.cats
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 62%;
+}
 .cats-item {
      float: left;
      width: 76.5px;
@@ -841,4 +858,25 @@ filter: brightness(0.9);
 }
 ol {
     list-style-type: circle;
+}
+.page-heading {
+   font-size: 1.2rem;
+}
+#dataset-search-form.search-form.spatial-search-front {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+
+}
+#dataset-search-form {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@media (min-width: 768px) {
+  .wrapper::before {
+    border-right: none !important;
+  }
+}
+.homepage .module-search .search-form {
+  padding: 0px;
 }
