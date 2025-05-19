@@ -5,9 +5,9 @@
     {% if intro %}
       {{ h.render_markdown(intro) }}
     {% else %}
-      <h2 class="page-heading" style="line-height: 1;">{% trans %}Featured Dataset:{% endtrans %} <a href="dataset/pex">Permafrost Extent and Ground Temperature Map, Northern Hemisphere</a> </h2>
+      <h2 class="page-heading" style="line-height: 1;">{% trans %}Featured Dataset:{% endtrans %} <a href="dataset/pan-arctic-vis-landscape-change-2003-2022">Pan-Arctic Visualization of Landscape Change (2003-2022), Arctic PASSION Permafrost Service </a> </h2>
       <div class="notes embedded-content">
-       <p>{% trans %}The product provides modeled mean annual ground temperatures (MAGT) at the top of the permafrost for the Northern Hemisphere at 1 km spatial resolution. Permafrost probability (fraction values from 0 to 1) is assigned to each grid cell with MAGT higher than 0 degree Celsius. Based on its permafrost probability each grid cell is classified as continuous, discontinuous and sporadic permafrost.{% endtrans %}</p>
+       <p>{% trans %}This raster dataset, in Cloud Optimized GeoTIFF format (COG), provides information on land surface changes at the pan-arctic scale. Multispectral Landsat-5 TM, Landsat-7 ETM+, and Landsat-8 OLI imagery (cloud-cover less than 80%, months July and August) was used for detecting disturbance trends (associated with abrupt permafrost degradation) between 2003 and 2022. For each satellite image we calculated the Tasseled Cap multi-spectral index to translate the spectral reflectance signal to the semantic information Brightness, Greenness, and Wetness. In order to characterize change information, we calculated the linear trend of the Brightness, Greenness and Wetness over two decades on the individual pixel level. The final map product therefore contains information on the direction and magnitude of change for all three Tasseled Cap parameters in 30m spatial resolution across the pan-arctic permafrost domain.{% endtrans %}</p>
       </div>    
     {% endif %}
   </div>
@@ -15,9 +15,9 @@
   {% block home_image %}
     <section class="featured media-overlay hidden-phone">
       {% block home_image_content %}
-        <p><a class="media-image" href="dataset/pex">
-            <img src="/dataset/adb9e43e-fc49-4074-8faf-4b2ec1d4e69d/resource/b1382479-1639-420f-8148-30b20127ad54/download/thumbnailuiopexmagtm3.020002016.png" alt="dataset image" style="padding-right: 10px; width:50%; height:auto; float:left; min-width: 50%;" />
-           </a>{% trans %}The NetCDF files contain resampled data from GeoTiffs to approx. 5, 10 and 25 km spatial resolution. The data contain both metric x and y coordinates in addition to geographic coordinates. Each NetCDF file contains datasets of mean annual ground temperature, permafrost occurrence probability and standard deviation of mean annual ground temperature.{% endtrans %}
+        <p><a class="media-image" href="dataset/pan-arctic-vis-landscape-change-2003-2022">
+            <img src="/dataset/01f6c42e-fec3-447e-b671-f14d378b2a7b/resource/3b93250e-086e-42b7-a172-5275be7e16fa/download/tcvis-example.jpg" alt="dataset image" style="padding-right: 10px; width:50%; height:auto; float:left; min-width: 50%;" />
+           </a>{% trans %}Changes in the Tasseled Cap indices Brightness, Greenness, and Wetness are displayed in the image bands red, green, and blue, respectively. The data can be explored via the <a href="https://alex.awi.de/">Arctic Landscape EXplorer (ALEX)</a> and is available as a <a href="https://maps.awi.de/services/common/permafrost/wms?request=GetCapabilities&service=WMS">public web map service (WMS)</a>, both hosted by AWI.{% endtrans %}
         </p>
 
       {% endblock %}
