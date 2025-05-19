@@ -39,9 +39,19 @@
   {% if res.url and h.is_url(res.url) %}
    <div class="btn download_btn">
        <a href="{{ res.url }}" class="resource-url-analytics" target="_blank">
- 
-            <i class="fa fa-download"></i>
-            {{ _('Download') }}
+			    {% if (res.format ==  "PDF") or (res.format ==  "pdf") %}
+				      <i class="fa fa-eye"></i>
+				      {{ _('View PDF') }}
+			    {% elif  (res.format == "HTML") or (res.format == "html") %}
+				      <i class="fa fa-eye"></i>
+				      {{ _('View site') }}			
+			    {% elif  (res.format == "JPG") or (res.format == "jpg") or (res.format == "PNG") or (res.format == "png") %}
+				      <i class="fa fa-eye"></i>
+				      {{ _('View image') }}
+			    {% else %}
+				      <i class="fa fa-download"></i>
+				      {{ _('Download') }}
+			    {% endif %}
        </a>
 
    </div>
