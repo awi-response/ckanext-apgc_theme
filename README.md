@@ -8,7 +8,7 @@ for instruction how to build such an extension see: https://docs.ckan.org/en/2.9
 
 ## Requirements
 
-Compatible with CKAN 2.9 python 3.6
+Compatible with CKAN 2.11 python 3.10
 
 ## Installation
 
@@ -25,15 +25,18 @@ To install ckanext-apgc_theme:
 2. Clone the source and install it on the virtualenv
 
     git clone https://github.com/awi-response/ckanext-apgc_theme.git
+   
     cd ckanext-apgc_theme
+   
     pip install -e .
+   
 	pip install -r requirements.txt
 
-3. Add `apgc_theme` to the `ckan.plugins` setting in your CKAN
+4. Add `apgc_theme` to the `ckan.plugins` setting in your CKAN
    config file (by default the config file is located at
    `/etc/ckan/default/ckan.ini`).
 
-4. Restart CKAN. For example if you've deployed CKAN with supervisor on Ubuntu:
+5. Restart CKAN. For example if you've deployed CKAN with supervisor on Ubuntu:
 
      sudo service supervisor restart
 
